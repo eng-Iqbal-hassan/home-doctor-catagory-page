@@ -3,27 +3,27 @@ body {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -45,11 +45,6 @@ main .header .nav-bar {
   justify-content: space-between;
   align-items: center;
   margin: 4.375rem 3.125rem 0;
-}
-@media screen and (max-width: 768px) {
-  main .header .nav-bar {
-    margin: 3.75rem 4.375rem 0;
-  }
 }
 @media screen and (max-width: 575px) {
   main .header .nav-bar {
@@ -73,12 +68,6 @@ main .header .nav-bar .logo img {
   main .header .nav-bar .logo {
     width: 6.25rem;
     height: 2.8125rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  main .header .nav-bar .logo {
-    width: 5.0625rem;
-    height: 2.3125rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -121,11 +110,6 @@ main .header .nav-bar .menu-items li:not(:last-child) {
     margin-right: 1.75rem;
   }
 }
-@media screen and (max-width: 768px) {
-  main .header .nav-bar .menu-items li:not(:last-child) {
-    margin-right: 1.5rem;
-  }
-}
 main .header .nav-bar .menu-items li a {
   font-size: 1rem;
   font-weight: 400;
@@ -142,11 +126,6 @@ main .header .nav-bar .menu-items li a {
     font-size: 0.75rem;
   }
 }
-@media screen and (max-width: 768px) {
-  main .header .nav-bar .menu-items li a {
-    font-size: 0.625rem;
-  }
-}
 main .header .nav-bar .menu-items #toggle {
   margin-right: 0;
 }
@@ -156,8 +135,8 @@ main .header .nav-bar .menu-items #target {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 3.4375rem;
-  right: -1.3125rem;
+  top: 55px;
+  right: -21px;
   z-index: 9;
   box-shadow: 0 0 16px 0 rgba(179, 56, 255, 0.1607843137);
   background-color: #ffffff;
@@ -170,11 +149,11 @@ main .header .nav-bar .menu-items #target .log-in {
   margin: 1rem 0 0.5rem;
 }
 main .header .nav-bar .menu-items #target .log-in p {
-  margin-left: 0.5rem;
   font-size: 0.625rem;
   font-weight: 600;
   color: #727F87;
   max-width: 7rem;
+  margin-left: 0.5rem;
 }
 main .header .nav-bar .menu-items #target span {
   font-size: 0.625rem;
@@ -207,26 +186,20 @@ main .header .nav-bar .social-icons li img {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 768px) {
-  main .header .nav-bar .social-icons li {
-    width: 0.875rem;
-    height: 0.875rem;
-  }
-}
-main .header .nav-bar .ham-burger {
+main .header .nav-bar .responsive-menu-button {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  main .header .nav-bar .ham-burger {
+  main .header .nav-bar .responsive-menu-button {
     display: block;
   }
 }
 @media screen and (max-width: 376px) {
-  main .header .nav-bar .ham-burger {
+  main .header .nav-bar .responsive-menu-button {
     width: 1.75rem;
     height: 2.25rem;
   }
-  main .header .nav-bar .ham-burger img {
+  main .header .nav-bar .responsive-menu-button img {
     width: 100%;
     height: 100%;
   }
@@ -238,10 +211,10 @@ main .header .drawer {
   right: -100%;
   z-index: 1;
   background-color: white;
-  padding: 1.25rem 1.875rem 3.125rem;
   width: 17.75rem;
   height: 100vh;
   transition: right 0.5s ease-in;
+  padding: 1.25rem 1.875rem 3.125rem;
 }
 main .header .drawer.active {
   right: 0 !important;
@@ -278,12 +251,12 @@ main .header .drawer .credentail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 37px;
+  margin: 0 2.3125rem;
 }
 main .header .drawer .credentail > .image {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 12px;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 0.75rem;
 }
 main .header .drawer .credentail > .image img {
   width: 100%;
@@ -294,45 +267,45 @@ main .header .drawer .credentail .login {
   justify-content: center;
   align-items: center;
   background-color: #B338FF;
-  color: white;
-  width: 170px;
-  height: 35px;
+  color: #ffffff;
+  width: 10.625rem;
+  height: 2.1875rem;
 }
 main .header .drawer .credentail .login span {
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 600;
-  margin-left: 12px;
+  margin-left: 0.75rem;
 }
 main .header .drawer > ul {
-  margin: 50px 25px 60px;
+  margin: 3.125rem 1.5625rem 3.75rem;
 }
 main .header .drawer > ul li {
   display: flex;
   align-items: center;
 }
 main .header .drawer > ul li:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 main .header .drawer > ul li .image {
-  width: 26px;
-  height: 26px;
   display: flex;
   justify-content: center;
+  width: 1.625rem;
+  height: 1.625rem;
 }
 main .header .drawer > ul li span {
-  margin-left: 24px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
+  margin-left: 1.5rem;
 }
 main .header .drawer .btn-primary {
-  margin: 0 37px;
-  width: 170px;
-  height: 35px;
+  width: 10.625rem;
+  height: 2.1875rem;
   background-color: #B338FF;
-  color: white;
-  padding: 10px;
+  color: #ffffff;
   border: none;
   border-radius: 3px;
+  margin: 0 2.3125rem;
+  padding: 0.625rem;
 }
 main .content-wrapper > .card-listing {
   display: flex;
@@ -417,10 +390,10 @@ main .content-wrapper > .card-listing .card .image {
   }
 }
 main .content-wrapper > .card-listing .card span {
-  text-align: center;
-  color: #727F87;
   font-size: 0.75rem;
   font-weight: 400;
+  text-align: center;
+  color: #727F87;
   margin-top: 0.3125rem;
 }
 @media screen and (max-width: 1024px) {
@@ -475,7 +448,7 @@ main .content-wrapper .description {
 @media screen and (max-width: 575px) {
   main .content-wrapper .description {
     flex-direction: column;
-    margin: 3.5rem 2z0px 0;
+    margin: 3.5rem 1.25rem 0;
   }
 }
 main .content-wrapper .description .content {
@@ -534,7 +507,7 @@ main .content-wrapper .description .content .btn-wrapper .btn-primary {
 @media screen and (max-width: 768px) {
   main .content-wrapper .description .content .btn-wrapper .btn-primary {
     font-size: 0.625rem;
-    border-radius: 3.125rem;
+    border-radius: 50px;
     padding: 0.375rem 0.625rem;
   }
 }
@@ -594,12 +567,12 @@ main .content-wrapper .description .content h3 {
 }
 main .content-wrapper .description .content p {
   max-width: 28.9375rem;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .description .content p {
     font-size: 0.625rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     max-width: 20.1875rem;
   }
 }
@@ -819,35 +792,35 @@ main .content-wrapper .quiz .progress span {
   position: absolute;
   font-size: 1.125rem;
   font-weight: 400;
-  top: 1.3125rem;
-  right: 3.25rem;
+  top: 21px;
+  right: 52px;
   color: #B338FF;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .progress span {
     font-size: 0.75rem;
-    top: 0.875rem;
-    right: 2.1875rem;
+    top: 14px;
+    right: 35px;
   }
 }
 @media screen and (max-width: 768px) {
   main .content-wrapper .quiz .progress span {
-    top: 0.8125rem;
-    right: 1.125rem;
+    top: 13px;
+    right: 18px;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .quiz .progress span {
     font-size: 0.875rem;
-    top: 0.9375rem;
-    right: 0.9375rem;
+    top: 15px;
+    right: 15px;
   }
 }
 @media screen and (max-width: 376px) {
   main .content-wrapper .quiz .progress span {
     font-size: 0.625rem;
-    top: 0.75rem;
-    right: 1.4375rem;
+    top: 12px;
+    right: 23px;
   }
 }
 main .content-wrapper .quiz .fact {
@@ -905,8 +878,8 @@ main .content-wrapper .quiz .fact .data {
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .quiz .fact .data {
-    padding: 1.6875rem 1.9375rem;
     margin-right: 0;
+    padding: 1.6875rem 1.9375rem;
   }
 }
 @media screen and (max-width: 376px) {
@@ -916,14 +889,14 @@ main .content-wrapper .quiz .fact .data {
 }
 main .content-wrapper .quiz .fact .data h4 {
   max-width: 34.625rem;
-  line-height: 30px;
+  line-height: 1.875rem;
   margin-bottom: 1.6875rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data h4 {
     font-size: 0.75rem;
     max-width: 22rem;
-    line-height: 19px;
+    line-height: 1.1875rem;
     margin-bottom: 1.125rem;
   }
 }
@@ -979,8 +952,8 @@ main .content-wrapper .quiz .fact .data .form-group::after {
   position: absolute;
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_856_3721)'%3E%3Cpath d='M3.93026 9.122C4.07248 9.12915 4.14108 9.13629 4.21041 9.13629C7.75588 9.13701 11.3021 9.14273 14.8475 9.13415C16.5906 9.12986 17.9556 7.96638 18.2594 6.25118C18.2994 6.02463 18.3001 5.78879 18.3008 5.55724C18.3044 4.11003 18.2987 2.66354 18.3044 1.21634C18.3065 0.486662 18.7961 -0.0121764 19.4772 -2.70181e-05C20.0553 0.00997834 20.5785 0.453073 20.5806 1.03052C20.5878 2.83363 20.6478 4.64317 20.5213 6.43842C20.3448 8.94905 18.1093 11.1159 15.6008 11.3761C15.2906 11.4082 14.9776 11.4254 14.666 11.4261C11.2006 11.4297 7.73515 11.4282 4.26972 11.4282C4.17467 11.4282 4.07962 11.4282 3.93383 11.4282C4.02602 11.5297 4.08105 11.594 4.14108 11.6541C4.93651 12.4502 5.73908 13.2392 6.52522 14.0439C7.15055 14.685 6.88684 15.7148 6.04282 15.9521C5.58043 16.0822 5.18879 15.9407 4.85003 15.6005C3.57792 14.3212 2.3001 13.047 1.02441 11.772C0.809299 11.5576 0.59204 11.3453 0.37621 11.1316C-0.124773 10.635 -0.128346 9.93672 0.367634 9.44146C1.85343 7.95924 3.34137 6.47916 4.82431 4.99336C5.14233 4.67462 5.50181 4.49738 5.95491 4.59315C6.38085 4.6832 6.6753 4.94334 6.81109 5.35784C6.95473 5.79593 6.84968 6.19115 6.53308 6.51918C6.11786 6.94941 5.68977 7.3682 5.26597 7.79129C4.8386 8.21866 4.40837 8.64603 3.93026 9.122Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_856_3721'%3E%3Crect width='20.6025' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-  height: 16px;
-  width: 21px;
+  height: 1rem;
+  width: 1.3125rem;
   right: 32px;
   top: 20px;
 }
@@ -1003,7 +976,7 @@ main .content-wrapper .quiz .fact .data .form-group input {
   color: #959595;
   border: 2.85px solid #B338FF;
   border-radius: 10px;
-  line-height: 37px;
+  line-height: 2.3125rem;
   padding: 0.5rem 2.0625rem 0.4375rem;
 }
 @media screen and (max-width: 1199px) {
@@ -1116,8 +1089,8 @@ main .content-wrapper .quiz .fact .data .btn-primary {
 }
 @media screen and (max-width: 376px) {
   main .content-wrapper .quiz .fact .data .btn-primary {
-    padding: 0.5rem 1rem;
     margin-bottom: 1.375rem;
+    padding: 0.5rem 1rem;
   }
 }
 main .content-wrapper .quiz .fact .data .question {
@@ -1128,8 +1101,8 @@ main .content-wrapper .quiz .fact .data .question {
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data .question {
-    margin-bottom: 2rem;
     border-radius: 5px;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1154,13 +1127,13 @@ main .content-wrapper .quiz .fact .data .question {
   }
 }
 main .content-wrapper .quiz .fact .data .question h6 {
-  line-height: 31px;
+  line-height: 1.9375rem;
   margin-bottom: 0.125rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data .question h6 {
     font-size: 0.625rem;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-bottom: 0.375rem;
   }
 }
@@ -1185,7 +1158,7 @@ main .content-wrapper .quiz .fact .data .question p {
   max-width: 34.0625rem;
   font-size: 0.75rem;
   font-weight: 400;
-  line-height: 20.5px;
+  line-height: 1.2813rem;
   color: #727F87;
 }
 main .content-wrapper .quiz .fact .data .question p span {
@@ -1195,7 +1168,7 @@ main .content-wrapper .quiz .fact .data .question p span {
   main .content-wrapper .quiz .fact .data .question p {
     font-size: 0.625rem;
     max-width: 21.0625rem;
-    line-height: 13px;
+    line-height: 0.8125rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1224,12 +1197,12 @@ main .content-wrapper .quiz .fact .data ul li {
   font-weight: 400;
   list-style: none;
   color: #6B6B6B;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data ul li {
     font-size: 0.75rem;
-    line-height: 16px;
+    line-height: 1rem;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1265,27 +1238,27 @@ main .content-wrapper .quiz .fact .data ul li:nth-child(2)::before {
   position: absolute;
   content: "";
   background-color: black;
-  width: 1px;
-  height: 19px;
+  width: 0.0625rem;
+  height: 1.1875rem;
   left: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::before {
+    height: 0.75rem;
     left: 16px;
-    height: 12px;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::before {
-    height: 16px;
+    height: 1rem;
     left: 24px;
   }
 }
 @media screen and (max-width: 376px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::before {
-    height: 13px;
+    height: 0.8125rem;
     left: 20px;
   }
 }
@@ -1293,32 +1266,32 @@ main .content-wrapper .quiz .fact .data ul li:nth-child(2)::after {
   position: absolute;
   content: "";
   background-color: #6B6B6B;
-  width: 1px;
-  height: 19px;
+  width: 0.0625rem;
+  height: 1.1875rem;
   right: 17px;
   top: 50%;
   transform: translateY(-50%);
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::after {
-    height: 12px;
+    height: 0.75rem;
     right: 16px;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::after {
-    height: 16px;
+    height: 1rem;
     right: 24px;
   }
 }
 @media screen and (max-width: 376px) {
   main .content-wrapper .quiz .fact .data ul li:nth-child(2)::after {
-    height: 13px;
+    height: 0.8125rem;
     right: 20px;
   }
 }
 main .content-wrapper .quiz .fact #quiz-radar {
-  flex: 0 0 383px;
+  flex: 0 0 23.9375rem;
   height: 18rem;
   margin-top: 3.5rem;
 }
@@ -1328,35 +1301,35 @@ main .content-wrapper .quiz .fact #quiz-radar #container {
 }
 @media screen and (max-width: 1199px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 300px;
+    flex: 0 0 18.75rem;
   }
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 260px;
+    flex: 0 0 16.25rem;
   }
 }
 @media screen and (max-width: 991px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 240px;
+    flex: 0 0 15rem;
   }
 }
 @media screen and (max-width: 768px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 219px;
+    flex: 0 0 13.6875rem;
     height: 9.75rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 276px;
+    flex: 0 0 17.25rem;
     height: 19.25rem;
     margin-top: 1.5rem;
   }
 }
 @media screen and (max-width: 376px) {
   main .content-wrapper .quiz .fact #quiz-radar {
-    flex: 0 0 219px;
+    flex: 0 0 13.6875rem;
     height: 9.4375rem;
   }
 }
@@ -1620,10 +1593,10 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   font-size: 1rem;
   font-weight: 600;
   top: 0;
-  left: 1.5rem;
+  left: 24px;
   color: #ffffff;
   background-color: #B338FF;
-  line-height: 24px;
+  line-height: 1.5rem;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   padding: 0.5rem 0.25rem;
@@ -1631,14 +1604,14 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
 @media screen and (max-width: 1199px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .rank {
     font-size: 0.875rem;
-    left: 0.75rem;
+    left: 12px;
     padding: 0.25rem;
   }
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .rank {
     font-size: 0.75rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     padding: 0.1875rem;
@@ -1647,21 +1620,21 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
 @media screen and (max-width: 768px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .rank {
     font-size: 0.6875rem;
-    left: 0.6875rem;
-    line-height: 16px;
+    left: 11px;
+    line-height: 1rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .rank {
     font-size: 0.875rem;
-    left: 0.875rem;
-    line-height: 21px;
+    left: 14px;
+    line-height: 1.3125rem;
     padding: 0.3125rem 0.1875rem 0.25rem 0.125rem;
   }
 }
 @media screen and (max-width: 480px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .rank {
-    left: 1.0625rem;
+    left: 17px;
     padding: 0.375rem 0.1875rem 0.3125rem;
   }
 }
@@ -1760,26 +1733,26 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
 }
 main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .feature .petroleum p {
   font-size: 0.75rem;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #7E7287;
   text-align: left;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .feature .petroleum p {
     font-size: 0.5rem;
-    line-height: 12px;
+    line-height: 0.75rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .feature .petroleum p {
     font-size: 0.5625rem;
-    line-height: 14px;
+    line-height: 0.875rem;
   }
 }
 @media screen and (max-width: 480px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .feature .petroleum p {
     font-size: 0.625rem;
-    line-height: 15px;
+    line-height: 0.9375rem;
   }
 }
 main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .feature .score {
@@ -1915,7 +1888,7 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   font-size: 0.5625rem;
   font-weight: 400;
   width: 3.75rem;
-  line-height: 14px;
+  line-height: 0.875rem;
   color: #B338FF;
   background-color: #F1DAFF;
   border-radius: 55px;
@@ -1927,7 +1900,7 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .price .btn-primary {
     font-size: 0.375rem;
     width: 2.5rem;
-    line-height: 9px;
+    line-height: 0.5625rem;
     border-radius: 35px;
     margin-left: 0.375rem;
     padding: 0.0625rem 0 0.125rem;
@@ -2002,8 +1975,8 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   }
 }
 main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .home-delivery li:nth-child(2) {
-  display: flex;
   position: relative;
+  display: flex;
   padding: 0 0.25rem 0 1.5rem;
 }
 @media screen and (max-width: 768px) {
@@ -2021,16 +1994,16 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   position: absolute;
   content: "";
   background-color: #ffffff;
-  width: 1px;
-  height: 18px;
+  width: 0.0625rem;
+  height: 1.125rem;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
 }
 @media screen and (max-width: 768px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .home-delivery li:nth-child(2)::before {
-    width: 1px;
-    height: 10px;
+    width: 0.0625rem;
+    height: 0.625rem;
     left: 8px;
   }
 }
@@ -2087,7 +2060,7 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
 }
 main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .retailer .compare .btn-primary:first-child {
   width: 1.25rem;
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .retailer .compare .btn-primary:first-child {
@@ -2109,13 +2082,13 @@ main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listin
   font-size: 0.625rem;
   font-weight: 300;
   width: 4rem;
-  line-height: 15px;
+  line-height: 0.9375rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .ranked-products .card-listing-wrapper .ranked-card-listing .card .retailer .compare .btn-primary:last-child {
     font-size: 0.4375rem;
     width: 2.5rem;
-    line-height: 10px;
+    line-height: 0.625rem;
     padding: 0.0625rem;
   }
 }
@@ -2279,7 +2252,7 @@ main .content-wrapper .filtered-products .filtered-card-listing .card {
   text-align: center;
   border-radius: 12px;
   box-shadow: 0 0 15px 0 rgba(179, 56, 255, 0.1019607843);
-  padding: 24pzx 1.5rem 22zpx;
+  padding: 1.5rem 1.5rem 1.375rem;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card {
@@ -2307,10 +2280,10 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
   font-size: 1rem;
   font-weight: 600;
   top: 0;
-  left: 1.5rem;
+  left: 24px;
   color: #ffffff;
   background-color: #B338FF;
-  line-height: 24px;
+  line-height: 1.5rem;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   padding: 0.5rem 0.25rem;
@@ -2318,14 +2291,14 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
 @media screen and (max-width: 1199px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
     font-size: 0.875rem;
-    left: 0.75rem;
+    left: 12px;
     padding: 0.25rem;
   }
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
     font-size: 0.75rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     padding: 0.25rem 0.1875rem;
@@ -2334,21 +2307,21 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
 @media screen and (max-width: 768px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
     font-size: 0.6875rem;
-    left: 0.6875rem;
-    line-height: 16px;
+    left: 11px;
+    line-height: 1rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
     font-size: 0.875rem;
-    left: 0.875rem;
-    line-height: 21px;
+    left: 14px;
+    line-height: 1.3125rem;
     padding: 0.3125rem 0.1875rem 0.25rem 0.125rem;
   }
 }
 @media screen and (max-width: 480px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .rank {
-    left: 1.0625rem;
+    left: 17px;
     padding: 0.375rem 0.1875rem 0.3125rem;
   }
 }
@@ -2443,25 +2416,25 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .feature {
 main .content-wrapper .filtered-products .filtered-card-listing .card .feature .petroleum p {
   text-align: left;
   font-size: 0.75rem;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #7E7287;
 }
 @media screen and (max-width: 1024px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .feature .petroleum p {
     font-size: 0.5rem;
-    line-height: 12px;
+    line-height: 0.75rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .feature .petroleum p {
     font-size: 0.5625rem;
-    line-height: 14px;
+    line-height: 0.875rem;
   }
 }
 @media screen and (max-width: 480px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .feature .petroleum p {
     font-size: 0.625rem;
-    line-height: 15px;
+    line-height: 0.9375rem;
   }
 }
 main .content-wrapper .filtered-products .filtered-card-listing .card .feature .score {
@@ -2599,7 +2572,7 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .price .bt
   background-color: #F1DAFF;
   border-radius: 55px;
   border: 1px solid #B338FF;
-  line-height: 14px;
+  line-height: 0.875rem;
   margin-left: 0.5rem;
   padding: 0.125rem;
 }
@@ -2700,16 +2673,16 @@ main .content-wrapper .filtered-products .filtered-card-listing .card .home-deli
   position: absolute;
   content: "";
   background-color: #ffffff;
-  width: 1px;
-  height: 18px;
+  width: 0.0625rem;
+  height: 1.125rem;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
 }
 @media screen and (max-width: 768px) {
   main .content-wrapper .filtered-products .filtered-card-listing .card .home-delivery li:nth-child(2)::before {
-    width: 1px;
-    height: 10px;
+    width: 0.0625rem;
+    height: 0.625rem;
     left: 8px;
   }
 }
@@ -2923,7 +2896,7 @@ footer .recommendation .content p {
   font-size: 1rem;
   font-weight: 600;
   color: #2A2F32;
-  line-height: 24px;
+  line-height: 1.5rem;
   margin-bottom: 0.5rem;
 }
 @media screen and (max-width: 1199px) {
@@ -2934,7 +2907,7 @@ footer .recommendation .content p {
 @media screen and (max-width: 1024px) {
   footer .recommendation .content p {
     font-size: 0.75rem;
-    line-height: 18px;
+    line-height: 1.125rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -2945,7 +2918,7 @@ footer .recommendation .content p {
 @media screen and (max-width: 768px) {
   footer .recommendation .content p {
     font-size: 0.875rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 }
 @media screen and (max-width: 575px) {
@@ -2961,7 +2934,7 @@ footer .recommendation .content p:nth-child(2) {
     display: block;
     font-size: 0.625rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2972,13 +2945,13 @@ footer .recommendation .content p:nth-child(2) {
 footer .recommendation .content span {
   font-size: 2.25rem;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.875rem;
   color: #B338FF;
 }
 @media screen and (max-width: 1024px) {
   footer .recommendation .content span {
     font-size: 1.75rem;
-    line-height: 16px;
+    line-height: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2988,7 +2961,7 @@ footer .recommendation .content span {
 }
 @media screen and (max-width: 575px) {
   footer .recommendation .content span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -3104,8 +3077,8 @@ footer .services .home-delivery li:nth-child(2)::before {
   position: absolute;
   content: "";
   background-color: #ffffff;
-  width: 1px;
-  height: 18px;
+  width: 0.0625rem;
+  height: 1.125rem;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
@@ -3113,7 +3086,7 @@ footer .services .home-delivery li:nth-child(2)::before {
 @media screen and (max-width: 1024px) {
   footer .services .home-delivery li:nth-child(2)::before {
     left: 10px;
-    height: 12px;
+    height: 0.75rem;
   }
 }
 footer .services a {

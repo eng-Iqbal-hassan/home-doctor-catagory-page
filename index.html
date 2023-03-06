@@ -14,7 +14,7 @@
       <div class="header">
         <div class="nav-bar">
           <div class="logo">
-            <img src="/assets/logo .svg" alt="" />
+            <img src="/assets/logo.svg" alt="" />
           </div>
           <ul class="menu-items">
             <li><a href="#">Home</a></li>
@@ -50,14 +50,14 @@
               <img src="/assets/twitter-icon.svg" alt="" />
             </li>
           </ul>
-          <div class="ham-burger">
+          <div class="responsive-menu-button">
             <img src="/assets/menu-icon.svg" alt="">
           </div>
         </div>
         <div class="drawer">
           <div class="drawer-header">
             <div class="logo">
-              <img src="/assets/logo .svg" alt="" />
+              <img src="/assets/logo.svg" alt="" />
             </div>
             <div class="social-icon">
               <div class="image">
@@ -922,8 +922,6 @@
         target.style.display = "none";
       }
     }
-  </script>
-  <script>
     var data1 = [
      {x: "Price", value: 60},
      {x: "Portablity", value: 20},
@@ -934,17 +932,15 @@
     ];
     var chart = anychart.radar();
     chart.yScale()
-     .minimum(0)
-     .maximum(80)
-     .ticks({'interval':20});
+    .minimum(0)
+    .maximum(80)
+    .ticks({"interval":20});
     var g = chart.area(data1)
     g.fill("#fdc53940");
     g.stroke({color: "none"});
-    chart.container('container');
+    chart.container("container");
     chart.draw();
-  </script>
-  <script>
-    var data1 = [
+    var data3 = [
      {x: "price", value: 80},
      {x: "portablity", value: 60},
      {x: "ease of use", value: 25},
@@ -952,7 +948,7 @@
      {x: "Price", value: 79},
      {x: "ease-of-use", value: 59},
     ];
-    var data2 = [
+    var data4 = [
      {x: "price", value: 60},
      {x: "portablity", value: 20},
      {x: "ease of use", value: 80},
@@ -960,7 +956,7 @@
      {x: "Price", value: 60},
      {x: "ease-of-use", value: 80},
     ];
-    var data3 = [
+    var data5 = [
      {x: "price", value: 60},
      {x: "portablity", value: 80},
      {x: "ease of use", value: 60},
@@ -968,7 +964,7 @@
      {x: "Price", value: 80},
      {x: "ease-of-use", value: 80},
     ];
-    var data4 = [
+    var data6 = [
      {x: "price", value: 80},
      {x: "portablity", value: 60},
      {x: "ease of use", value: 80},
@@ -980,34 +976,28 @@
     chart.yScale()
      .minimum(0)
      .maximum(80)
-     .ticks({'interval':20});
-    var g = chart.area(data1);
+     .ticks({"interval":20});
+    var g = chart.area(data3);
     g.fill("#b338ff33");
     g.stroke({color: "#b338ff" , radius: "6.25px" });
-    var k = chart.area(data2);
+    var k = chart.area(data4);
     k.fill("#fdc53940");
     k.stroke({color: "#fdc539" , radius: "6.25px" });
-    var l = chart.area(data3);
+    var l = chart.area(data5);
     l.fill("#13AC3E33");
     l.stroke({color: "#13AC3E" , radius: "6.25px" });
-    var m = chart.area(data4);
+    var m = chart.area(data6);
     m.fill("#17eaaa33");
     m.stroke({color: "#17EAAA" , radius: "7.5px" });
     chart.container('ranked-container');
     chart.draw();
-  </script>
-  <script>
-
     const body= document.body;
-    // debugger
     const navBar= document.querySelector(".nav-bar");
-    const menuButton=document.querySelector(".ham-burger");
+    const menuButton=document.querySelector(".responsive-menu-button");
     const respnsiveBar=document.querySelector(".drawer");
     const contentWrapper =document.querySelector(".content-wrapper")
-
     if (menuButton) {
       menuButton.addEventListener("click", () => {
-        // debugger
         respnsiveBar.classList.add("active");
         navBar.classList.add("blur");
         contentWrapper.classList.add("blur");
@@ -1015,17 +1005,14 @@
       }
     )
   }
-
   if (contentWrapper) {
     contentWrapper.addEventListener("click", () => {
-        // debugger
         respnsiveBar.classList.remove("active");
         navBar.classList.remove("blur")
         contentWrapper.classList.remove("blur")
       }
     )
   }
-
   if (navBar) {
     navBar.addEventListener("click", () => {
       respnsiveBar.classList.remove("active");
